@@ -1,1 +1,11 @@
-/*# sourceMappingURL=main.css.map */
+body {
+  margin: 0em;
+}
+
+.navbar a {
+  color: #444444;
+  text-decoration: none;
+}
+.navbar ul {
+  list-style-type: none;
+}/*# sourceMappingURL=main.css.map */
