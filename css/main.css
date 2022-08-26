@@ -1,11 +1,53 @@
 body {
   margin: 0em;
+  background-color: #FFFFFF;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  position: fixed;
+}
 .navbar a {
   color: #444444;
   text-decoration: none;
+  background-color: #FFFFFF;
 }
-.navbar ul {
+.navbar .container {
+  margin: 0.5em 1em;
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+.navbar .container .Lukas {
+  margin-right: 5em;
+}
+.navbar .PrimaryNav {
+  text-align: justify;
+  display: flex;
   list-style-type: none;
+  position: fixed;
+  right: 0;
+}
+.navbar .PrimaryNav li {
+  padding: 0em 1em;
+}
+
+.hero {
+  background: #575757;
+  color: #FFFFFF;
+}
+.hero .container {
+  display: flex;
+}
+
+.HeroImage {
+  right: 0;
+  width: 300px;
+}
+
+.Profil_Image img {
+  width: 300px;
 }/*# sourceMappingURL=main.css.map */
