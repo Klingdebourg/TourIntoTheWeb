@@ -1,5 +1,6 @@
 body{
     margin: 0em;
+    padding: 0;
     background-color: #FFFFFF;
 }
 
@@ -10,57 +11,154 @@ ul{
 
 .navbar{
 
-    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 1.5em;
+    background-color: #F4F4F4;
+    
 
-    a {
-        color: #444444;
+    a{
         text-decoration: none;
-        background-color: #FFFFFF;
-    }
-    .container{
-        margin: 0.5em 1em;
-        display: grid;
-        grid-template-columns: 30% 70%;
-
-       .Lukas{
-        margin-right: 5em;
-       }
     }
 
-    .PrimaryNav {
-        text-align:justify;
+    .Lukas{
+        background: #0065BD;
+        padding: 0.5em 1em;
+        color: white;
+        border-radius: 1em;
+
+    }
+
+    .PrimaryNav{
+        //Its the unordered list
+
         display: flex;
         list-style-type: none;
-        //margin: 0 0em 0 auto;
-        position: fixed;
-        right: 0;
+        padding-top: 0.5em;
 
         li{
-            
-            padding: 0em 1em;
+            padding: 0 1.5em;
         }
+
+
+    }
+
+
+    // // position: fixed;
+    // color: #444444;
+
+    // a {
+    //     color: #444444;
+    //     text-decoration: none;
+    //     background-color: #FFFFFF;
+    // }
+
+    // .container{
+    //     // margin: 0.5em 1em;
+    //     // display: grid;
+    //     // grid-template-columns: 30% 70%;
+
+    //     display: flex;
+    //     justify-content: space-between;
+
+    // //    .Lukas{
+    // //     margin-right: 5em;
+    // //    }
+    // }
+
+    // .PrimaryNav {
+    //     text-align:justify;
+    //     display: flex;
+    //     list-style-type: none;
+    //     //margin: 0 0em 0 auto;
+    //     position: fixed;
+    //     // right: 0;
+
+    //     li{
+            
+    //         padding: 0em 1em;
+    //     }
         
 
 
-    }
+    // }
 }
 
-.hero {
-    background: #575757;
-    color: #FFFFFF;
+// .hero {
+//     background: #575757;
+//     color: #FFFFFF;
 
-    .container{
-        display: flex;
+//     .container{
+//         display: flex;
+//     }
+
+// }
+
+// .HeroImage{
+        
+//     right: 0;
+//     width: 300px;
+// }
+
+// .Profil_Image img{
+//     width: 300px;
+// }
+
+.hero{
+    background-color: #3d3d3d;
+    color: #FFFFFF;
+    display: grid;
+    grid-template-columns: 45% auto;
+    padding: 3em 0;
+    //justify-content: space-between;
+
+    .Welcome{
+        display: block;
+        padding: 5em 4em;
+        text-align: center;
+
+        h1{
+            margin-bottom: 2em;
+        }
     }
 
 }
 
 .HeroImage{
-        
-    right: 0;
-    width: 300px;
+
+    display: block;
+    //margin: 2em 0 2em 0em; 
+    width: 100%;
+    object-fit: scale-down;
+    
 }
 
-.Profil_Image img{
-    width: 300px;
+.Profil_Image{
+    
+    //display: block;
+    width: 100%;
+
+    
+}
+
+.WhoAmI{
+    background-color: #EDEDED;
+    padding: 4em 3em;
+    display: grid;
+    grid-template-columns: 35% auto;
+
+    .WhoAmI_Text{
+        //display: block;
+        margin: 0em 5em 0 5em ;
+
+        h1{
+            text-align: center;
+            margin-bottom: 3em;
+        }
+
+        p{
+            text-align: justify;
+
+        }
+    }
 }
