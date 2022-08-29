@@ -1,12 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans:wght@400;600;700&display=swap');
+
 body{
     margin: 0em;
     padding: 0;
     background-color: #FFFFFF;
+    font-family: 'Noto Sans';
 }
 
 ul{
     margin: 0;
     padding: 0;
+}
+
+h1{
+    font-family: 'Bebas Neue';
+    font-size: 3em;
+}
+
+h2{
+    font-size: 2em;
 }
 
 .navbar{
@@ -161,4 +174,62 @@ ul{
 
         }
     }
+}
+
+.skills{
+
+    h1, h2{
+        text-align: center;
+    }
+
+    .Skill_container{
+        display: grid;
+        grid-template-columns: 50% auto;
+
+
+        .Skills_left_col{
+            background-color: #EDEDED;
+            margin: 0 2.5em 0 5em;
+            padding: 0 2.5em 1em;
+
+            // .chart_wrap{
+            //     display: flex;
+            //     justify-content: center;
+            // }
+
+            // .piechart{
+            //     display: block;
+            //     position: relative;
+            //     overflow: hidden;
+            //     margin: 0 auto;
+                
+            // }
+
+            .chart_wrap {
+                display: flex;
+                justify-content: center;
+                position: relative;
+                padding-bottom: 16em;
+                height: 0;
+                overflow:hidden;
+            }
+            
+            .chart_div {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width:100%;
+                height:100%;
+            }
+
+        }
+
+        .Skills_right_col{
+            background-color: #EDEDED;
+            margin: 0 5em 0 2.5em;
+            padding: 0 2.5em 1em;
+    }
+
+    }
+
 }
