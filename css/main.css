@@ -151,6 +151,14 @@ h2 {
   color: var(--timeline-BackroundColor);
   z-index: 3;
 }
+.Timeline .start-line {
+  position: absolute;
+  top: -1.5em;
+  left: -4.5em;
+  height: 5em;
+  width: 1em;
+  background-color: var(--timeline-color1);
+}
 .Timeline .timeline-left-col {
   padding-right: 4em;
 }
@@ -220,17 +228,33 @@ h2 {
 .Timeline .left-col-line {
   position: absolute;
   right: -4.5em;
-  top: -5em;
+  top: 3em;
   width: 1em;
-  height: 10em;
-  background-color: var(--timeline-color2);
+  height: 100%;
+  background-color: var(--timeline-color1);
 }
 .Timeline .right-col-line {
   position: absolute;
   left: -4.5em;
-  top: -5em;
+  top: 3em;
   width: 1em;
-  height: 10em;
+  height: 100%;
+  background-color: var(--timeline-color2);
+}
+.Timeline .left-vertical-line {
+  position: absolute;
+  top: 2.5em;
+  right: -4em;
+  height: 1em;
+  width: 4em;
+  background-color: var(--timeline-color2);
+}
+.Timeline .right-vertical-line {
+  position: absolute;
+  top: 2.5em;
+  left: -4em;
+  height: 1em;
+  width: 4em;
   background-color: var(--timeline-color1);
 }
 .Timeline .content-left, .Timeline .content-right {
@@ -245,13 +269,10 @@ h2 {
 }
 .Timeline .Timeline-Container .right-col-container1 {
   position: relative;
+  z-index: 2;
 }
 .Timeline .Timeline-Container .right-col-container1 h2 {
   margin-top: 0.5em;
-}
-.Timeline .Timeline-Container .right-col-container1 .right-col-line {
-  top: -1.5em;
-  height: 5em;
 }
 .Timeline .Timeline-Container .right-col-container1:before {
   content: "";
@@ -259,12 +280,13 @@ h2 {
   top: 2.5em;
   right: 0em;
   height: 1em;
-  width: 110%;
+  width: 100%;
   background-color: var(--timeline-color1);
 }
 .Timeline .Timeline-Container .left-col-container1 {
   margin-top: 8em;
   position: relative;
+  z-index: 5;
 }
 .Timeline .Timeline-Container .left-col-container1:before {
   content: "";
@@ -272,11 +294,12 @@ h2 {
   top: 2.5em;
   left: 0em;
   height: 1em;
-  width: 110%;
+  width: 100%;
   background-color: var(--timeline-color2);
 }
 .Timeline .Timeline-Container .right-col-container2 {
   position: relative;
+  z-index: 6;
 }
 .Timeline .Timeline-Container .right-col-container2:before {
   content: "";
@@ -284,7 +307,7 @@ h2 {
   top: 2.5em;
   right: 0em;
   height: 1em;
-  width: 110%;
+  width: 100%;
   background-color: var(--timeline-color1);
 }
 .Timeline .Timeline-Container .right-col-container2 .TumLogo {
@@ -295,6 +318,7 @@ h2 {
 }
 .Timeline .Timeline-Container .left-col-container2 {
   position: relative;
+  z-index: 7;
 }
 .Timeline .Timeline-Container .left-col-container2:before {
   content: "";
@@ -302,11 +326,12 @@ h2 {
   top: 2.5em;
   left: 0em;
   height: 1em;
-  width: 110%;
+  width: 100%;
   background-color: var(--timeline-color2);
 }
 .Timeline .Timeline-Container .right-col-container3 {
   position: relative;
+  z-index: 8;
 }
 .Timeline .Timeline-Container .right-col-container3:before {
   content: "";
@@ -314,7 +339,7 @@ h2 {
   top: 2.5em;
   right: 0em;
   height: 1em;
-  width: 110%;
+  width: 100%;
   background-color: var(--timeline-color1);
 }
 .Timeline .Timeline-Container .right-col-container3 .eCARus {
@@ -323,8 +348,12 @@ h2 {
   margin-right: auto;
   width: 50%;
 }
+.Timeline .Timeline-Container .right-col-container3 .right-col-line {
+  height: 115%;
+}
 .Timeline .Timeline-Container .left-col-container3 {
   position: relative;
+  z-index: 9;
 }
 .Timeline .Timeline-Container .left-col-container3:before {
   content: "";
@@ -332,6 +361,6 @@ h2 {
   top: 2.5em;
   left: 0em;
   height: 1em;
-  width: 110%;
+  width: 100%;
   background-color: var(--timeline-color2);
 }/*# sourceMappingURL=main.css.map */
