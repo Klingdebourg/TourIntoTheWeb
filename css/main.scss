@@ -142,7 +142,6 @@ h2{
             margin-bottom: 2em;
         }
     }
-
 }
 
 .HeroImage{
@@ -171,17 +170,23 @@ h2{
 
     .WhoAmI_Text{
         //display: block;
-        margin: 0em 5em 0 5em ;
+        margin: 0em 7em 0 7em ;     //orginally 5em
 
         h1{
             text-align: center;
-            margin-bottom: 3em;
+            margin-bottom: 1em;
         }
 
         p{
             text-align: justify;
+            line-height: 170%;
+            margin-bottom: 1.8em;
 
         }
+    }
+    
+    span{
+        font-weight: bold;
     }
 }
 
@@ -257,6 +262,10 @@ h2{
     h2{
         color: #FFFFFF;
         text-align: center;
+    }
+
+    span{
+        font-weight: bold;
     }
 
     .start{
