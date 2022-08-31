@@ -6,6 +6,10 @@
   --timeline-color2: #007BFF;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0em;
   padding: 0;

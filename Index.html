@@ -16,9 +16,9 @@
 
             <nav>
                 <ul class = "PrimaryNav">
-                    <li><a href="#">Über mich </a></li>
-                    <li><a href="#">Skills </a></li>
-                    <li><a href="#">Timeline</a></li>
+                    <li><a href="#Über mich">Über mich </a></li>
+                    <li><a href="#Skills">Skills </a></li>
+                    <li><a href="#Timeline">Timeline</a></li>
                     <li><a href="#">Zusätzliche Materialien </a></li>
 
                 </ul>
@@ -48,7 +48,7 @@
 
     </section>
 
-    <section class = "WhoAmI">
+    <section class = "WhoAmI" id="Über mich">
         <!-- <div class="container"> -->
             <!-- <div class = "Profil_Image"> -->
                 <img class = "Profil_Image" src="Images/Profil_Image.JPG" alt="Lukas Klingberg Profilbild vor TUM">
@@ -56,8 +56,8 @@
             
             <div class="WhoAmI_Text">
                 <h1>Wer bin ich</h1>
-                <p>Mein Name ist Lukas Klingberg, bin 24 Jahre alt und studiere derzeit Elektrotechnik und Informationstechnik an der Technischen Universität Münchne</p>
-                <p>Mein Fokus liegt dabei auf Automatisierungstechnik und Robotik.
+                <p>Mein Name ist Lukas Klingberg, ich bin 24 Jahre alt und studiere derzeit Elektrotechnik und Informationstechnik an der Technischen Universität München.</p>
+                <p>Mein Fokus liegt dabei im Bereich Robotik und Automatisierung.
                     Allerdings sind die Grenzen zu anderen Bereichen fließend, weshalb ich mich auch in Richtung AI, Computer Vision, aber auch Energienetzen spezialisiert habe.</p>
                 <p>Ein besonderes Interesse habe ich dabei an Schnittstellen zu anderen Fachbereichen.
                     Es ist eine tolle Herausforderung dem Spagat zwischen Technick und Management zu bereiten und so möglichst viel aus beiden Welten zu vereinen.
@@ -67,7 +67,7 @@
 
     </section>
 
-    <section class = "skills">
+    <section class = "skills" id="Skills">
         <!-- <div class="container"> -->
             <h1>Meine Skills</h1>
 
@@ -117,6 +117,7 @@
                     <div class="awards">
                         <h2>Auszeichnungen</h2>
                         <ul>
+                            <li>Erster Platz beim Wettbewerb des Lehrstuhls MMK für Oberflächen Design 2022</li>
                             <li>Zweiter Platz des Studenten-Löttwettbewerbs von IPS 2019</li>
                             <li>Dritter Platz beim Science Slam 2017</li>
 
@@ -142,7 +143,7 @@
 
     </section>
 
-    <section class="Timeline">
+    <section class="Timeline" id="Timeline">
 
         <h1>Meine Timeline</h1>
         <div class="start"></div>
@@ -301,42 +302,44 @@
     <script type="text/javascript">
       google.charts.load("current", {packages:["corechart"]});
       google.charts.setOnLoadCallback(drawChart);
-      function drawChart() {
-        var data = google.visualization.arrayToDataTable([
-          ['Programming language', 'Skill'],
-          ['C/C++',  6],
-          ['Python',  6],
-          ['Matlab', 6],
-          ['Creo(CAD)', 3],
-          ['EAGLE', 2],
-          ['Step7', 1.5],
-          ['Html/Css', 2]
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+            ['Programming language', 'Skill'],
+            ['C/C++',  6],
+            ['Python',  6],
+            ['Matlab', 6],
+            ['Creo(CAD)', 3],
+            ['EAGLE', 2],
+            ['Step7', 1.5],
+            ['Html/Css', 2]
 
-        ]);
+            ]);
 
-      var options = {
-        backgroundColor: '#EDEDED',
-        chartArea:  {width:'auto', height:'100%'},
-        legend: 'none',
-        pieSliceText: 'label',
-        pieStartAngle: 100,
-        colors: ['#000F9A', '#005293', '#2678F3', '#66A2FC', '#B0D0FF', '#929292','#3B4357']
-      };
+            var options = {
+            backgroundColor: '#EDEDED',
+            chartArea:  {width:'auto', height:'100%'},
+            legend: 'none',
+            pieSliceText: 'label',
+            pieStartAngle: 100,
+            fontName: 'Noto Sans ',
+            colors: ['#000F9A', '#005293', '#2678F3', '#66A2FC', '#B0D0FF', '#929292','#3B4357']
+            };
 
-        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
-        chart.draw(data, options);
+            var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+            chart.draw(data, options);
 
-        // $(window).on("throttledresize", function (event) {
-        //     var options = {
-        //     width: '100%',
-        //     height: '100%',
-        //     };
+            // $(window).on("throttledresize", function (event) {
+            //     var options = {
+            //     width: '100%',
+            //     height: '100%',
+            //     };
 
-        // var data = google.visualization.arrayToDataTable([]);
-        // drawChart(data, options);
-        // });
+            // var data = google.visualization.arrayToDataTable([]);
+            // drawChart(data, options);
+            // });
 
-      }
+        }
+        
     </script>
 
 
