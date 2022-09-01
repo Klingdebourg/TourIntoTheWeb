@@ -131,10 +131,21 @@ h2 {
   width: 100%;
   height: 100%;
 }
+.skills .Skill_container .Skills_left_col .Applications ul {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding-left: 15%;
+}
+.skills .Skill_container .Skills_left_col .Applications li {
+  margin-right: 2em;
+}
 .skills .Skill_container .Skills_right_col {
   background-color: #EDEDED;
   margin: 0 5em 0 2.5em;
-  padding: 0 2.5em 1em;
+  padding: 0 2.5em 1em 3.5em;
+}
+.skills .Skill_container .Skills_right_col span {
+  font-weight: bold;
 }
 
 .Timeline {
