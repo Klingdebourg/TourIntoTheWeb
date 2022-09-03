@@ -284,6 +284,10 @@ h2{
         font-weight: bold;
     }
 
+    ul{
+        padding-left: 2em;
+    }    
+
     .start{
         margin: 0 auto ;
         width: 2em;
@@ -518,6 +522,7 @@ h2{
                 display: block;
                 margin-left: auto;
                 margin-right: auto;
+                margin-top: 1.5em;
                 width: 50%;
             }
             .right-col-line{
