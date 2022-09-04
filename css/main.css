@@ -6,10 +6,6 @@
   --timeline-color2: #007BFF;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   margin: 0em;
   padding: 0;
@@ -64,7 +60,7 @@ h2 {
 }
 .hero .Welcome {
   display: block;
-  padding: 5em 4em;
+  padding: 5em 4em 0;
   text-align: center;
 }
 .hero .Welcome h1 {
@@ -286,7 +282,7 @@ h2 {
 .Timeline .content-left, .Timeline .content-right {
   background-color: #EDEDED;
   position: relative;
-  padding: 0 0.5em 0.5em;
+  padding: 0 1em 0.5em;
 }
 .Timeline .Timeline-Container {
   display: grid;
@@ -340,7 +336,7 @@ h2 {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 60%;
+  width: 45%;
 }
 .Timeline .Timeline-Container .left-col-container2 {
   position: relative;
@@ -375,9 +371,6 @@ h2 {
   margin-top: 1.5em;
   width: 50%;
 }
-.Timeline .Timeline-Container .right-col-container3 .right-col-line {
-  height: 115%;
-}
 .Timeline .Timeline-Container .left-col-container3 {
   position: relative;
   z-index: 9;
@@ -390,4 +383,37 @@ h2 {
   height: 1em;
   width: 100%;
   background-color: var(--timeline-color2);
+}
+.Timeline .Timeline-Container .right-col-container4 {
+  position: relative;
+  z-index: 10;
+}
+.Timeline .Timeline-Container .right-col-container4:before {
+  content: "";
+  position: absolute;
+  top: 2.5em;
+  right: 0em;
+  height: 1em;
+  width: 100%;
+  background-color: var(--timeline-color1);
+}
+.Timeline .Timeline-Container .left-col-container4 {
+  position: relative;
+  z-index: 11;
+}
+.Timeline .Timeline-Container .left-col-container4:before {
+  content: "";
+  position: absolute;
+  top: 2.5em;
+  left: 0em;
+  height: 1em;
+  width: 100%;
+  background-color: var(--timeline-color2);
+}
+
+@media only screen and (min-width: 1600px) {
+  .Timeline-Container {
+    max-width: 1500px;
+    margin: 0em auto;
+  }
 }/*# sourceMappingURL=main.css.map */

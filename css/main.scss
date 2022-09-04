@@ -7,7 +7,7 @@
     --timeline-color2: #007BFF;
 }
 
-html{scroll-behavior:smooth}
+// html{scroll-behavior:smooth}
 
 body{
     margin: 0em;
@@ -135,7 +135,7 @@ h2{
 
     .Welcome{
         display: block;
-        padding: 5em 4em;
+        padding: 5em 4em 0;
         text-align: center;
 
         h1{
@@ -423,7 +423,7 @@ h2{
     .content-left, .content-right{
         background-color: #EDEDED;
         position: relative;
-        padding: 0 0.5em 0.5em;
+        padding: 0 1em 0.5em;
     }
 
 
@@ -485,7 +485,7 @@ h2{
                 display: block;
                 margin-left: auto;
                 margin-right: auto;
-                width: 60%;
+                width: 45%;
             }
         }
 
@@ -525,9 +525,7 @@ h2{
                 margin-top: 1.5em;
                 width: 50%;
             }
-            .right-col-line{
-                height: 115%;
-            }
+
         }
 
         .left-col-container3{
@@ -545,8 +543,59 @@ h2{
             }
         }
 
+        .right-col-container4{
+            position: relative;
+            z-index: 10;
+
+
+            &:before{
+                content: '';
+                position: absolute;
+                top: 2.5em;
+                right: 0em;
+                height: 1em;
+                width: 100%;
+                background-color: var(--timeline-color1);
+            }
+
+        }
+
+        .left-col-container4{
+            position: relative;
+            z-index: 11;
+
+            &:before{
+                content: '';
+                position: absolute;
+                top: 2.5em;
+                left: 0em;
+                height: 1em;
+                width: 100%;
+                background-color: var(--timeline-color2);
+            }
+        }
+
+
 
     }
 
 
+}
+
+@media only screen and (min-width: 1600px){
+
+    // .timeline-left-col{
+    //     padding-right: 4em;
+    //     padding-left: auto;
+    // }
+
+    // .timeline-right-col{
+    //     padding-left: 4em;
+    //     padding-right: auto;
+    // }
+
+    .Timeline-Container{
+        max-width: 1500px;
+        margin: 0em auto;
+    }
 }
