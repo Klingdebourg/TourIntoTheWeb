@@ -6,6 +6,10 @@
   --timeline-color2: #007BFF;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0em;
   padding: 0;
@@ -84,6 +88,9 @@ h2 {
   display: grid;
   grid-template-columns: 35% auto;
 }
+.WhoAmI .mobile-WhoAmI {
+  display: none;
+}
 .WhoAmI .WhoAmI_Text {
   margin: 0em 7em 0 7em;
 }
@@ -147,7 +154,7 @@ h2 {
 .Timeline {
   background-color: var(--timeline-BackroundColor);
   margin-top: 3em;
-  padding: 0.1em 0 4em;
+  padding: 0.1em 0 7em;
 }
 .Timeline h1 {
   color: #FFFFFF;
@@ -397,6 +404,10 @@ h2 {
   width: 100%;
   background-color: var(--timeline-color1);
 }
+.Timeline .Timeline-Container .right-col-container4 .right-col-line {
+  height: 125%;
+  overflow: hidden;
+}
 .Timeline .Timeline-Container .left-col-container4 {
   position: relative;
   z-index: 11;
@@ -410,10 +421,51 @@ h2 {
   width: 100%;
   background-color: var(--timeline-color2);
 }
+.Timeline .Timeline-Container .left-col-container4 .left-col-line {
+  height: 120%;
+  background-color: var(--timeline-BackroundColor);
+  overflow: hidden;
+}
 
 @media only screen and (min-width: 1600px) {
-  .Timeline-Container {
+  .Timeline .Timeline-Container {
     max-width: 1500px;
     margin: 0em auto;
+  }
+  .Timeline .Timeline-Container .right-col-container4 .right-col-line {
+    height: 100%;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .hero .Welcome h2 {
+    display: none;
+  }
+  .hero .Welcome h1 {
+    margin: 0;
+    margin-bottom: 0;
+    padding: 0;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .WhoAmI {
+    display: block;
+  }
+  .WhoAmI .mobile-WhoAmI {
+    display: block;
+    text-align: center;
+  }
+  .WhoAmI .WhoAmI_Text h1 {
+    display: none;
+  }
+  .WhoAmI .Profil_Image {
+    display: block;
+    width: 50%;
+    margin: 0 auto 1.5em;
+  }
+  .skills .Skill_container {
+    display: block;
+  }
+  .skills .Skill_container .Skills_left_col, .skills .Skill_container .Skills_right_col {
+    margin: 2em 3em;
   }
 }/*# sourceMappingURL=main.css.map */

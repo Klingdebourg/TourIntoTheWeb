@@ -7,7 +7,7 @@
     --timeline-color2: #007BFF;
 }
 
-// html{scroll-behavior:smooth}
+html{scroll-behavior:smooth}
 
 body{
     margin: 0em;
@@ -166,6 +166,8 @@ h2{
     padding: 4em 3em;
     display: grid;
     grid-template-columns: 35% auto;
+
+    .mobile-WhoAmI{display: none;}
     
 
     .WhoAmI_Text{
@@ -266,7 +268,7 @@ h2{
 .Timeline{
     background-color: var(--timeline-BackroundColor);
     margin-top: 3em;
-    padding: 0.1em 0 4em;
+    padding: 0.1em 0 7em;
     
 
     h1{
@@ -558,6 +560,11 @@ h2{
                 background-color: var(--timeline-color1);
             }
 
+            .right-col-line{
+                height: 125%;
+                overflow: hidden;
+            }
+
         }
 
         .left-col-container4{
@@ -572,6 +579,12 @@ h2{
                 height: 1em;
                 width: 100%;
                 background-color: var(--timeline-color2);
+            }
+            .left-col-line{
+                height: 120%;
+                background-color: var(--timeline-BackroundColor);
+                overflow: hidden;
+        
             }
         }
 
@@ -594,8 +607,77 @@ h2{
     //     padding-right: auto;
     // }
 
-    .Timeline-Container{
-        max-width: 1500px;
-        margin: 0em auto;
+    .Timeline{
+
+        .Timeline-Container{
+            max-width: 1500px;
+            margin: 0em auto;
+
+            .right-col-container4{
+
+                .right-col-line{
+                    height: 100%;
+                }
+
+            }
+        }
     }
+}
+
+@media only screen and (max-width: 1100px){
+    .hero{
+        .Welcome{
+
+            h2{
+                display: none;
+            }
+        
+            h1{
+                margin: 0;
+                margin-bottom: 0;
+                padding: 0;
+            }
+        }
+    }
+    
+}
+
+@media only screen and (max-width: 900px){
+
+    .WhoAmI{
+        display: block;
+
+        .mobile-WhoAmI{
+            display: block;
+            text-align: center;
+        }
+
+        .WhoAmI_Text{
+            h1{
+                display: none;
+            }
+        }
+
+        .Profil_Image{
+            display: block;
+            width: 50%;
+            margin: 0 auto 1.5em;
+        }
+
+        
+
+    }
+
+    .skills{
+        .Skill_container{
+            display: block;
+            
+
+            .Skills_left_col, .Skills_right_col{
+                margin: 2em 3em;
+            }
+        }
+    }
+
+
 }
