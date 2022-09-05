@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans:wght@400;600;700&display=swap');
 
 :root {
+    --primary-color: #0065BD;
+    --nav-color: #00498a;
     --timeline-BackroundColor: #565656;
     --timeline-color1: #0065BD;
     --timeline-color2: #007BFF;
@@ -43,7 +45,7 @@ h2{
     }
 
     .Lukas{
-        background: #0065BD;
+        background: var(--primary-color);
         padding: 0.5em 1em;
         color: white;
         border-radius: 1em;
@@ -55,10 +57,18 @@ h2{
 
         display: flex;
         list-style-type: none;
+        color: var(--nav-color);
         padding-top: 0.5em;
 
         li{
             padding: 0 1.5em;
+        }
+        a{
+            &:visited{
+                color: var(--nav-color);
+            }
+            
+            //font-weight: bold;
         }
 
 
