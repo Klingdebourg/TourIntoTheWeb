@@ -453,6 +453,12 @@ h2 {
   background-color: var(--timeline-BackroundColor);
   overflow: hidden;
 }
+.Timeline .Timeline-Container .left-col-container4 .TumLogo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 45%;
+}
 
 .Impressum {
   color: #4e4e4e;
