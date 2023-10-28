@@ -10,53 +10,56 @@
     --text-selection-color: #007BFF;
 }
 
-html{scroll-behavior:smooth}
+html {
+    scroll-behavior: smooth
+}
 
-body{
+body {
     margin: 0em;
     padding: 0;
     background-color: #FFFFFF;
     font-family: 'Noto Sans';
 
     //Text selection color
-    ::-moz-selection { /* Code for Firefox */
+    ::-moz-selection {
+        /* Code for Firefox */
         color: #FFFFFF;
         background: var(--text-selection-color);
     }
-      
+
     ::selection {
         color: #FFFFFF;
         background: var(--text-selection-color);
     }
 }
 
-ul{
+ul {
     margin: 0;
     padding: 0;
 }
 
-h1{
+h1 {
     font-family: 'Bebas Neue';
     font-size: 3em;
 }
 
-h2{
+h2 {
     font-size: 2em;
 }
 
-.navbar{
+.navbar {
 
     display: flex;
     justify-content: space-between;
     padding: 1em 1.5em;
     background-color: #F4F4F4;
-    
 
-    a{
+
+    a {
         text-decoration: none;
     }
 
-    .Lukas{
+    .Lukas {
         background: var(--primary-color);
         padding: 0.5em 1em;
         color: white;
@@ -64,7 +67,7 @@ h2{
 
     }
 
-    .PrimaryNav{
+    .PrimaryNav {
         //Its the unordered list
 
         display: flex;
@@ -72,15 +75,17 @@ h2{
         color: var(--nav-color);
         padding-top: 0.5em;
 
-        li{
+        li {
             padding: 0 1.5em;
         }
-        a{
-            &:visited{
+
+        a {
+            &:visited {
                 color: var(--nav-color);
             }
+
             color: var(--primary-color);
-            
+
             //font-weight: bold;
         }
 
@@ -119,10 +124,10 @@ h2{
     //     // right: 0;
 
     //     li{
-            
+
     //         padding: 0em 1em;
     //     }
-        
+
 
 
     // }
@@ -139,7 +144,7 @@ h2{
 // }
 
 // .HeroImage{
-        
+
 //     right: 0;
 //     width: 300px;
 // }
@@ -148,7 +153,7 @@ h2{
 //     width: 300px;
 // }
 
-.hero{
+.hero {
     background-color: #3d3d3d;
     color: #FFFFFF;
     display: grid;
@@ -156,77 +161,80 @@ h2{
     padding: 3em 0;
     //justify-content: space-between;
 
-    .Welcome{
+    .Welcome {
         display: block;
         padding: 5em 4em 0;
         text-align: center;
 
-        h1{
+        h1 {
             margin-bottom: 2em;
         }
     }
 }
 
-.HeroImage{
+.HeroImage {
 
     display: block;
     //margin: 2em 0 2em 0em; 
     width: 100%;
     object-fit: scale-down;
-    
+
 }
 
-.Profil_Image{
-    
+.Profil_Image {
+
     //display: block;
     width: 100%;
 
-    
+
 }
 
-.WhoAmI{
+.WhoAmI {
     background-color: #EDEDED;
     padding: 4em 3em;
     display: grid;
     grid-template-columns: 35% auto;
 
-    .mobile-WhoAmI{display: none;}
-    
+    .mobile-WhoAmI {
+        display: none;
+    }
 
-    .WhoAmI_Text{
+
+    .WhoAmI_Text {
         //display: block;
-        margin: 0em 7em 0 7em ;     //orginally 5em
+        margin: 0em 7em 0 7em; //orginally 5em
 
-        h1{
+        h1 {
             text-align: center;
             margin-bottom: 1em;
         }
 
-        p{
+        p {
             text-align: justify;
             line-height: 170%;
             margin-bottom: 1.8em;
 
         }
     }
-    
-    span{
+
+    span {
         font-weight: bold;
     }
 }
 
-.skills{
+.skills {
 
-    h1, h2{
+    h1,
+    h2 {
         text-align: center;
     }
 
-    .Skill_container{
+    .Skill_container {
         display: grid;
         grid-template-columns: 50% auto;
 
 
-        .Skills_left_col{
+        .Skills_left_col {
             background-color: #EDEDED;
             margin: 0 2.5em 0 5em;
             padding: 0 2.5em 1em;
@@ -241,7 +249,7 @@ h2{
             //     position: relative;
             //     overflow: hidden;
             //     margin: 0 auto;
-                
+
             // }
 
             .chart_wrap {
@@ -250,71 +258,70 @@ h2{
                 position: relative;
                 padding-bottom: 16em;
                 height: 0;
-                overflow:hidden;
+                overflow: hidden;
             }
-            
+
             .chart_div {
                 position: absolute;
                 top: 0;
                 left: 0;
-                width:100%;
-                height:100%;
+                width: 100%;
+                height: 100%;
             }
 
-            .Applications{
-                ul{
+            .Applications {
+                ul {
                     display: grid;
                     grid-template-columns: auto auto;
                     padding-left: 15%;
                 }
 
-                li{
+                li {
                     margin-right: 2em;
                 }
             }
 
         }
 
-        .Skills_right_col
-        {
+        .Skills_right_col {
             background-color: #EDEDED;
             margin: 0 5em 0 2.5em;
             padding: 0 2.5em 1em 3.5em;
 
-            span{
+            span {
                 font-weight: bold;
             }
         }
     }
 }
 
-.Timeline{
+.Timeline {
     background-color: var(--timeline-BackroundColor);
     margin-top: 3em;
     padding: 0.1em 0 7em;
-    
 
-    h1{
+
+    h1 {
         color: #FFFFFF;
         text-align: center;
         margin-bottom: 0.5em;
     }
 
-    h2{
+    h2 {
         color: #FFFFFF;
         text-align: center;
     }
 
-    span{
+    span {
         font-weight: bold;
     }
 
-    ul{
+    ul {
         padding-left: 2em;
-    }    
+    }
 
-    .start{
-        margin: 0 auto ;
+    .start {
+        margin: 0 auto;
         width: 2em;
         height: 2em;
         border-radius: 100%;
@@ -322,7 +329,8 @@ h2{
         color: var(--timeline-BackroundColor);
         z-index: 3;
     }
-    .start-line{
+
+    .start-line {
         position: absolute;
         top: -1.5em;
         left: -4.5em;
@@ -330,7 +338,8 @@ h2{
         width: 1em;
         background-color: var(--timeline-color1);
     }
-    .end-line{
+
+    .end-line {
         position: relative;
         bottom: 0;
         margin: -7em auto 0;
@@ -340,27 +349,29 @@ h2{
         z-index: 20;
     }
 
-    .timeline-left-col{
+    .timeline-left-col {
         padding-right: 4em;
-        h3{
+
+        h3 {
             color: var(--timeline-color1);
             text-align: center;
         }
     }
 
-    .timeline-right-col{
+    .timeline-right-col {
         padding-left: 4em;
-        h3{
+
+        h3 {
             color: var(--timeline-color1);
             text-align: center;
         }
     }
 
-    .left-col-container{
+    .left-col-container {
         padding-right: 4em;
     }
-    
-    .circle_left{
+
+    .circle_left {
         position: absolute;
         top: -3em;
         left: -6em;
@@ -371,7 +382,7 @@ h2{
         z-index: 4;
     }
 
-    .circle_right{
+    .circle_right {
         position: absolute;
         top: -3em;
         right: -6em;
@@ -382,50 +393,51 @@ h2{
         z-index: 4;
     }
 
-    .quarter_circle_left{
+    .quarter_circle_left {
 
         position: absolute;
         top: -4em;
         left: -4em;
         width: 3em;
         height: 3em;
-        border-top-right-radius:100%;
-        border-top-left-radius:0;
-        border-bottom-right-radius:0;
-        border-bottom-left-radius:0%;
+        border-top-right-radius: 100%;
+        border-top-left-radius: 0;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0%;
         background-color: var(--timeline-color1);
         z-index: 3;
     }
-    .quarter_circle_right{
+
+    .quarter_circle_right {
 
         position: absolute;
         top: -4em;
         right: -4em;
         width: 3em;
         height: 3em;
-        border-top-right-radius:0%;
-        border-top-left-radius:100%;
-        border-bottom-right-radius:0;
-        border-bottom-left-radius:0%;
+        border-top-right-radius: 0%;
+        border-top-left-radius: 100%;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0%;
         background-color: var(--timeline-color2);
         z-index: 3;
     }
 
-    .circle1{
+    .circle1 {
         position: relative;
     }
 
-    .left-col-line{
+    .left-col-line {
         position: absolute;
         right: -4.5em;
-        top:  3em;
+        top: 3em;
         width: 1em;
         height: 100%;
         background-color: var(--timeline-color1);
 
     }
 
-    .right-col-line{
+    .right-col-line {
         position: absolute;
         left: -4.5em;
         top: 3em;
@@ -435,7 +447,7 @@ h2{
 
     }
 
-    .left-vertical-line{
+    .left-vertical-line {
         position: absolute;
         top: 2.5em;
         right: -4em;
@@ -444,7 +456,7 @@ h2{
         background-color: var(--timeline-color2);
     }
 
-    .right-vertical-line{
+    .right-vertical-line {
         position: absolute;
         top: 2.5em;
         left: -4em;
@@ -454,27 +466,29 @@ h2{
     }
 
 
-    .content-left, .content-right{
+    .content-left,
+    .content-right {
         background-color: #EDEDED;
         position: relative;
         padding: 0 1em 0.5em;
     }
 
 
-    .Timeline-Container{
+    .Timeline-Container {
         display: grid;
         grid-template-columns: 50% auto;
         padding: 0 3em;
 
 
-        .right-col-container1{
+        .right-col-container1 {
             position: relative;
             z-index: 2;
 
-            h2{
+            h2 {
                 margin-top: 0.5em;
             }
-            &:before{
+
+            &:before {
                 content: '';
                 position: absolute;
                 top: 2.5em;
@@ -485,12 +499,12 @@ h2{
             }
         }
 
-        .left-col-container1{
+        .left-col-container1 {
             margin-top: 8em;
             position: relative;
             z-index: 5;
 
-            &:before{
+            &:before {
                 content: '';
                 position: absolute;
                 top: 2.5em;
@@ -501,12 +515,12 @@ h2{
             }
         }
 
-        .right-col-container2{
+        .right-col-container2 {
             position: relative;
             z-index: 6;
 
 
-            &:before{
+            &:before {
                 content: '';
                 position: absolute;
                 top: 2.5em;
@@ -515,7 +529,8 @@ h2{
                 width: 100%;
                 background-color: var(--timeline-color1);
             }
-            .TumLogo{
+
+            .TumLogo {
                 display: block;
                 margin-left: auto;
                 margin-right: auto;
@@ -523,11 +538,11 @@ h2{
             }
         }
 
-        .left-col-container2{
+        .left-col-container2 {
             position: relative;
             z-index: 7;
 
-            &:before{
+            &:before {
                 content: '';
                 position: absolute;
                 top: 2.5em;
@@ -538,12 +553,12 @@ h2{
             }
         }
 
-        .right-col-container3{
+        .right-col-container3 {
             position: relative;
             z-index: 8;
 
 
-            &:before{
+            &:before {
                 content: '';
                 position: absolute;
                 top: 2.5em;
@@ -552,7 +567,8 @@ h2{
                 width: 100%;
                 background-color: var(--timeline-color1);
             }
-            .eCARus{
+
+            .eCARus {
                 display: block;
                 margin-left: auto;
                 margin-right: auto;
@@ -562,11 +578,11 @@ h2{
 
         }
 
-        .left-col-container3{
+        .left-col-container3 {
             position: relative;
             z-index: 9;
 
-            &:before{
+            &:before {
                 content: '';
                 position: absolute;
                 top: 2.5em;
@@ -577,12 +593,12 @@ h2{
             }
         }
 
-        .right-col-container4{
+        .right-col-container4 {
             position: relative;
             z-index: 10;
 
 
-            &:before{
+            &:before {
                 content: '';
                 position: absolute;
                 top: 2.5em;
@@ -592,18 +608,13 @@ h2{
                 background-color: var(--timeline-color1);
             }
 
-            .right-col-line{
-                height: 90%;
-                overflow: hidden;
-            }
-
         }
 
-        .left-col-container4{
+        .left-col-container4 {
             position: relative;
             z-index: 11;
 
-            &:before{
+            &:before {
                 content: '';
                 position: absolute;
                 top: 2.5em;
@@ -612,13 +623,13 @@ h2{
                 width: 100%;
                 background-color: var(--timeline-color2);
             }
-            .left-col-line{
-                height: 115%;
-                background-color: var(--timeline-BackroundColor);
+
+            .left-col-line {
+                height: 90%;
                 overflow: hidden;
-        
             }
-            .TumLogo{
+
+            .TumLogo {
                 display: block;
                 margin-left: auto;
                 margin-right: auto;
@@ -626,32 +637,52 @@ h2{
             }
         }
 
+        .right-col-container5 {
+            position: relative;
+            z-index: 12;
 
+            &:before {
+                content: '';
+                position: absolute;
+                top: 2.5em;
+                right: 0em;
+                height: 1em;
+                width: 100%;
+                background-color: var(--timeline-color1);
+            }
+
+            .right-col-line {
+                height: 100%;
+                background-color: var(--timeline-BackroundColor);
+                overflow: hidden;
+            }
+            
+        }
 
     }
 
 
 }
 
-.Impressum{
-    color:#4e4e4e;
+.Impressum {
+    color: #4e4e4e;
 
-    .Impressum-container{
+    .Impressum-container {
         display: grid;
         grid-template-columns: 30% 30% auto;
         padding: 0 1em;
         font-size: 0.8em;
     }
-    
 
-    h2{
+
+    h2 {
         text-align: center;
         font-size: 1.1em;
-        
-        
+
+
     }
 
-    .comment{
+    .comment {
         text-align: justify;
         padding-right: 1em;
     }
@@ -661,7 +692,7 @@ h2{
 
 
 
-@media only screen and (min-width: 1600px){
+@media only screen and (min-width: 1600px) {
 
     // .timeline-left-col{
     //     padding-right: 4em;
@@ -673,15 +704,15 @@ h2{
     //     padding-right: auto;
     // }
 
-    .Timeline{
+    .Timeline {
 
-        .Timeline-Container{
+        .Timeline-Container {
             max-width: 1500px;
             margin: 0em auto;
 
-            .right-col-container4{
+            .right-col-container4 {
 
-                .right-col-line{
+                .right-col-line {
                     height: 90%;
                 }
 
@@ -692,56 +723,57 @@ h2{
 
 
 
-@media only screen and (max-width: 1100px){
-    .hero{
-        .Welcome{
+@media only screen and (max-width: 1100px) {
+    .hero {
+        .Welcome {
 
-            h2{
+            h2 {
                 display: none;
             }
-        
-            h1{
+
+            h1 {
                 margin: 0;
                 margin-bottom: 0;
                 padding: 0;
             }
         }
     }
-    
+
 }
 
-@media only screen and (max-width: 900px){
+@media only screen and (max-width: 900px) {
 
-    .WhoAmI{
+    .WhoAmI {
         display: block;
 
-        .mobile-WhoAmI{
+        .mobile-WhoAmI {
             display: block;
             text-align: center;
         }
 
-        .WhoAmI_Text{
-            h1{
+        .WhoAmI_Text {
+            h1 {
                 display: none;
             }
         }
 
-        .Profil_Image{
+        .Profil_Image {
             display: block;
             width: 50%;
             margin: 0 auto 1.5em;
         }
 
-        
+
 
     }
 
-    .skills{
-        .Skill_container{
+    .skills {
+        .Skill_container {
             display: block;
-            
 
-            .Skills_left_col, .Skills_right_col{
+
+            .Skills_left_col,
+            .Skills_right_col {
                 margin: 2em 3em;
             }
         }

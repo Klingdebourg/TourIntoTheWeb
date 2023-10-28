@@ -19,7 +19,8 @@ body {
   background-color: #FFFFFF;
   font-family: "Noto Sans";
 }
-body ::-moz-selection { /* Code for Firefox */
+body ::-moz-selection {
+  /* Code for Firefox */
   color: #FFFFFF;
   background: var(--text-selection-color);
 }
@@ -125,7 +126,8 @@ h2 {
   font-weight: bold;
 }
 
-.skills h1, .skills h2 {
+.skills h1,
+.skills h2 {
   text-align: center;
 }
 .skills .Skill_container {
@@ -313,7 +315,8 @@ h2 {
   width: 4em;
   background-color: var(--timeline-color1);
 }
-.Timeline .content-left, .Timeline .content-right {
+.Timeline .content-left,
+.Timeline .content-right {
   background-color: #EDEDED;
   position: relative;
   padding: 0 1em 0.5em;
@@ -431,10 +434,6 @@ h2 {
   width: 100%;
   background-color: var(--timeline-color1);
 }
-.Timeline .Timeline-Container .right-col-container4 .right-col-line {
-  height: 90%;
-  overflow: hidden;
-}
 .Timeline .Timeline-Container .left-col-container4 {
   position: relative;
   z-index: 11;
@@ -449,8 +448,7 @@ h2 {
   background-color: var(--timeline-color2);
 }
 .Timeline .Timeline-Container .left-col-container4 .left-col-line {
-  height: 115%;
-  background-color: var(--timeline-BackroundColor);
+  height: 90%;
   overflow: hidden;
 }
 .Timeline .Timeline-Container .left-col-container4 .TumLogo {
@@ -458,6 +456,24 @@ h2 {
   margin-left: auto;
   margin-right: auto;
   width: 45%;
+}
+.Timeline .Timeline-Container .right-col-container5 {
+  position: relative;
+  z-index: 12;
+}
+.Timeline .Timeline-Container .right-col-container5:before {
+  content: "";
+  position: absolute;
+  top: 2.5em;
+  right: 0em;
+  height: 1em;
+  width: 100%;
+  background-color: var(--timeline-color1);
+}
+.Timeline .Timeline-Container .right-col-container5 .right-col-line {
+  height: 100%;
+  background-color: var(--timeline-BackroundColor);
+  overflow: hidden;
 }
 
 .Impressum {
@@ -516,7 +532,8 @@ h2 {
   .skills .Skill_container {
     display: block;
   }
-  .skills .Skill_container .Skills_left_col, .skills .Skill_container .Skills_right_col {
+  .skills .Skill_container .Skills_left_col,
+  .skills .Skill_container .Skills_right_col {
     margin: 2em 3em;
   }
 }/*# sourceMappingURL=main.css.map */
