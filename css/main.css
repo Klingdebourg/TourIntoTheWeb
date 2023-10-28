@@ -162,6 +162,10 @@ h2 {
 .skills .Skill_container .Skills_left_col .Applications li {
   margin-right: 2em;
 }
+.skills .Skill_container .Skills_left_col .Applications p {
+  padding-left: 10%;
+  padding-right: 10%;
+}
 .skills .Skill_container .Skills_right_col {
   background-color: #EDEDED;
   margin: 0 5em 0 2.5em;
