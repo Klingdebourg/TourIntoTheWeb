@@ -172,6 +172,39 @@ h2 {
     }
 }
 
+.Warning {
+    display: none;
+    background-color: #3d3d3d;
+    // display: block;
+    padding: 10px 15px 0;
+    padding-bottom: -3em;
+    //margin: 1em;
+
+    .alert {
+        padding: 20px;
+        background-color: #f44336; /* Red */
+        color: white;
+        // margin-bottom: 15px;
+      }
+      
+      /* The close button */
+      .closebtn {
+        margin-left: 15px;
+        color: white;
+        font-weight: bold;
+        float: right;
+        font-size: 22px;
+        line-height: 20px;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+      
+      /* When moving the mouse over the close button */
+      .closebtn:hover {
+        color: black;
+      }
+}
+
 .HeroImage {
 
     display: block;
@@ -743,7 +776,6 @@ h2 {
             }
         }
     }
-
 }
 
 @media only screen and (max-width: 900px) {
@@ -783,6 +815,19 @@ h2 {
             }
         }
     }
+}
 
+@media only screen and (max-width: 740px) {
 
+    .Warning{
+        display: block;
+    }
+
+    .hero{
+        padding: 2em 0;
+        
+        .Welcome{
+            padding-top: 2em;
+        }
+    }
 }
